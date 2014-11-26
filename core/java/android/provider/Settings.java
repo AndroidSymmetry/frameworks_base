@@ -2662,6 +2662,12 @@ public final class Settings {
          public static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 
         /**
+         *  Enable statusbar double tap gesture on to put device to sleep
+         * @hide
+         */
+        public static final String STATUS_BAR_DOUBLE_TAP_TO_SLEEP = "status_bar_double_tap_sleep";
+
+        /**
          * Clock and date position on the status bar
          * 0: Right clock
          * 1: Center clock
