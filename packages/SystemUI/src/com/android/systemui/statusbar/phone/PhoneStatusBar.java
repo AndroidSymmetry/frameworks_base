@@ -2077,6 +2077,9 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             if (mClockStyle == CLOCK_STYLE_CENTERED && mTicking) {
                 visibility = View.INVISIBLE;
             }
+            if (mClockStyle == CLOCK_STYLE_CENTERED && mState == StatusBarState.KEYGUARD) {
+                visibility = View.GONE;
+            }
             mClockView.updateSettings();
             mClockView.setVisibility(visibility);
         }
@@ -3925,6 +3928,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         updateNotifications();
         checkBarModes();
         updateCarrierLabelVisibility(false);
+        updateClock();
         updateMediaMetaData(false);
         mKeyguardMonitor.notifyKeyguardState(mStatusBarKeyguardViewManager.isShowing(),
                 mStatusBarKeyguardViewManager.isSecure());
