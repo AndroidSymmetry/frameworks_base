@@ -4792,7 +4792,11 @@ public final class Settings {
          * @hide
          */
         public static final String SMS_DEFAULT_APPLICATION = "sms_default_application";
-
+        /**
+         * Whether to use the custom quick unlock screen control
+         * @hide
+         */
+        public static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "lockscreen_quick_unlock_control";
         /**
          *
          * @hide
@@ -4943,6 +4947,7 @@ public final class Settings {
             MOUNT_UMS_NOTIFY_ENABLED,
             UI_NIGHT_MODE,
             SLEEP_TIMEOUT,
+            LOCKSCREEN_QUICK_UNLOCK_CONTROL,
             ADVANCED_REBOOT
         };
 
