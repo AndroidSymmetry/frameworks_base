@@ -2932,6 +2932,13 @@ public final class Settings {
         public static final String STATUS_BAR_NOTIF_COUNT_TEXT_COLOR = "status_bar_notif_count_text_color";
 
         /**
+         * Defines the status and navigation bar color is battery safe mode is enabled.
+         *
+         * @hide
+         */
+        public static final String BATTERY_SAVER_MODE_COLOR = "battery_save_mode_color";
+
+        /**
          * Automatic keyboard rotation timeout.  0 to disable completely.
          * @hide
          */
@@ -7558,6 +7565,7 @@ public final class Settings {
         return "android-" + Long.toHexString(androidId);
     }
 }
+
 
 
 
